@@ -1,0 +1,20 @@
+<template>
+  <svg-story
+    :svgs="[
+      'ArrowDown',
+      'ArrowRight',
+      'ArrowLeft',
+      'ArrowUp',
+      'Check',
+      'ChevronDown',
+      'ChevronRight',
+      'ChevronLeft',
+      'ChevronUp',
+      'Cross',
+      'Email',
+      'List',
+      'Phone',
+      'Undo'
+    ]"
+  />
+</template>

@@ -1,0 +1,64 @@
+// Typography
+
+// $font-sans: 'Helvetica Neue', 'Helvetica', 'Roboto', $font-sans;
+// $font-display: 'Poppins', $font-sans;
+
+$font-weight-semibold: 600;
+$font-weight-bold: 800;
+$font-weight-headline: 700;
+
+$default-font: $font-sans;
+$default-font-size: 18px;
+
+$default-link-weight: $font-weight-semibold;
+
+$line-height-headline: 1;
+
+
+
+// Elements
+
+$radius-tight: 2px;
+$radius: 6px;
+$radius-loose: 12px;
+
+$pad-tight-vertical: 4px;
+$pad-tight-horizontal: 8px;
+$pad-vertical: 8px;
+$pad-horizontal: 14px;
+$pad-loose-vertical: 14px;
+$pad-loose-horizontal: 22px;
+
+
+
+// Colors
+
+$light-blue: #227aff;
+$blue: #004bbc;
+$dark-blue: #002e73;
+
+$light-green: #aaf0cc;
+$green: #62d198;
+$dark-green: #3bb174;
+
+$light-yellow: #ffff46;
+$yellow: #f7f700;
+
+$brand-green: $light-green;
+$brand-yellow: $yellow;
+
+$very-light-grey: #eceff0;
+$dark-grey: #6d6d6d;
+$dark: #222;
+$very-dark: $black;
+
+
+
+// Color usage
+
+$default-text-color: $very-dark;
+
+$default-link-color: $blue;
+$default-link-active-color: $light-blue;
+
+$default-shadow-color: $very-dark;

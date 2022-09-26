@@ -1,0 +1,11 @@
+<template>
+  <svg-story
+    :svgs="[
+      'Github',
+      'Linkedin',
+      'Medium',
+      'Skype',
+      'Twitter'
+    ]"
+  />
+</template>

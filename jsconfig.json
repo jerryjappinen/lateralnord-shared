@@ -1,0 +1,18 @@
+{
+  "include": [
+    "./.storybook/**/*",
+    "./base/**/*",
+    "./components/**/*",
+    "./config/**/*",
+    "./spec/**/*",
+    "./stories/**/*",
+    "./styles/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "checkJs": false
+  }
+}
