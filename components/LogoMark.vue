@@ -75,7 +75,7 @@ export default {
 
 <style lang="scss">
 
-$c-logo-mark-color: #000;
+$c-logo-mark-color: #161513;
 $c-logo-mark-negative: #fff;
 $c-logo-mark-green: #62d198;
 

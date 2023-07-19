@@ -101,7 +101,7 @@ export default {
 
 <style lang="scss">
 
-$c-logo-color: #000;
+$c-logo-color: #161513;
 $c-logo-negative: #fff;
 $c-logo-green: #62d198;
 
