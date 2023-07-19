@@ -4,7 +4,7 @@ import longPress from 'linna/directives/longPress'
 import StyledButton from './StyledButton'
 
 export default {
-  name: 'StyledButton',
+  name: 'StyledLongPressButton',
 
   directives: {
     longPress

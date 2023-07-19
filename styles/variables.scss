@@ -5,9 +5,12 @@
 
 $font-weight-semibold: 600;
 $font-weight-bold: 800;
-$font-weight-headline: 700;
+$font-weight-headline: 800;
 
-$default-font: $font-sans;
+$font-serif: 'Source Serif 4', 'Times New Roman', serif, $font-sans;
+$font-headline: $font-serif;
+
+$default-font: $font-serif;
 $default-font-size: 18px;
 
 $default-link-weight: $font-weight-semibold;
@@ -18,7 +21,7 @@ $line-height-headline: 1;
 
 // Elements
 
-$radius-tight: 2px;
+$radius-tight: 3px;
 $radius: 6px;
 $radius-loose: 12px;
 
@@ -47,10 +50,13 @@ $yellow: #f7f700;
 $brand-green: $light-green;
 $brand-yellow: $yellow;
 
-$very-light-grey: #eceff0;
-$dark-grey: #6d6d6d;
-$dark: #222;
-$very-dark: $black;
+$very-very-light-grey: #F0EEEA;
+$very-light-grey: #e0ddd5;
+$light-grey: #c8c5bf;
+$grey: #a9a59e;
+$dark-grey: #716E69;
+$dark: #242320;
+$very-dark: #161513;
 
 
 
