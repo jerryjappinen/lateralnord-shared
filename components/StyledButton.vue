@@ -8,6 +8,8 @@ const colors = [
   'danger',
   'secondary',
   'secondary-white',
+  'outline',
+  'outline-white',
   'tertiary',
   'plain',
   'link'
@@ -133,7 +135,8 @@ export default {
 }
 
 .c-styled-button-primary,
-.c-styled-button-danger {
+.c-styled-button-danger,
+.c-styled-button-secondary-white {
   color: $white;
 
   &.c-click-button-not-loading {
@@ -151,6 +154,14 @@ export default {
   background-color: $very-dark;
 }
 
+.c-styled-button-secondary {
+  background-color: $very-light-grey;
+}
+
+.c-styled-button-secondary-white {
+  background-color: $dark;
+}
+
 .c-styled-button-white {
   background-color: $white;
 }
@@ -163,8 +174,8 @@ export default {
 
 // Outlined buttons
 
-.c-styled-button-secondary,
-.c-styled-button-secondary-white {
+.c-styled-button-outline,
+.c-styled-button-outline-white {
   padding: #{$pad-vertical - 2px} #{$pad-horizontal - 2px};
 
   &.c-click-button {
@@ -172,7 +183,7 @@ export default {
   }
 }
 
-.c-styled-button-secondary {
+.c-styled-button-outline {
   color: $very-dark;
   border-color: $very-dark;
 
@@ -185,7 +196,7 @@ export default {
 
 }
 
-.c-styled-button-secondary-white {
+.c-styled-button-outline-white {
   color: $white;
   border-color: $white;
 
@@ -196,6 +207,8 @@ export default {
   }
 
 }
+
+
 
 // Link buttons
 
