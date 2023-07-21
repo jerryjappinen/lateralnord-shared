@@ -60,6 +60,21 @@ $very-dark: #161513;
 
 
 
+// Line heights
+$line-height-very-tight: 1.1;
+$line-height-tight: 1.3;
+$line-height: 1.5;
+
+$line-height-headline: $line-height-very-tight;
+
+$line-height-very-tight-em: $line-height-very-tight * 1em;
+$line-height-tight-em: $line-height-tight * 1em;
+$line-height-em: $line-height * 1em;
+
+$line-height-headline-em: $line-height-headline * 1em;
+
+
+
 // Color usage
 
 $default-text-color: $very-dark;
@@ -68,3 +83,25 @@ $default-link-color: $blue;
 $default-link-active-color: $light-blue;
 
 $default-shadow-color: $very-dark;
+
+$default-border-color: $light-grey;
+
+
+
+// Defaults
+$default-font: null !default;
+$default-font-size: 16px !default;
+$default-line-height: $line-height !default;
+
+$default-background-color: $very-very-light-grey !default;
+
+$default-discreet-color-light: $very-light-grey !default;
+$default-discreet-color: $light-grey !default;
+$default-discreet-color-dark: $grey !default;
+$default-discreet-text-color: $default-discreet-color-dark !default;
+
+$default-text-color: $dark !default;
+$default-border-color: $light-grey !default;
+
+$default-shadow-opacity: 0.2 !default;
+$default-shadow-color: $dark !default;
