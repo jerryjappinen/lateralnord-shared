@@ -9,6 +9,11 @@ export default {
   },
 
   props: {
+    large: {
+      type: Boolean,
+      default: false
+    },
+
     color: {},
     href: {},
     to: {},
@@ -37,7 +42,11 @@ export default {
 <template>
   <styled-button
     class="c-styled-icon-button"
-    :class="'c-styled-icon-button-' + (color || 'default')"
+    :class="{
+      ['c-styled-icon-button-' + (color || 'default')]: true,
+      'c-styled-icon-button-small': !large,
+      'c-styled-icon-button-large': large
+    }"
     :color="color"
     :href="href"
     :to="to"
@@ -57,8 +66,6 @@ export default {
 <style lang="scss">
 
 .c-styled-icon-button {
-  width: calc(#{$line-height-em} + #{2 * $pad-tight-vertical});
-  height: calc(#{$line-height-em} + #{2 * $pad-tight-vertical});
 
   &.c-styled-button {
     @include round;
@@ -80,6 +87,22 @@ export default {
       }
     }
 
+  }
+
+}
+
+.c-styled-icon-button-small {
+  width: calc(#{$line-height-em} + #{2 * $pad-tight-vertical});
+  height: calc(#{$line-height-em} + #{2 * $pad-tight-vertical});
+}
+
+.c-styled-icon-button-large {
+  width: calc(#{$line-height-em + ($line-height-em - $line-height-tight-em)} + #{2 * $pad-tight-vertical});
+  height: calc(#{$line-height-em + ($line-height-em - $line-height-tight-em)} + #{2 * $pad-tight-vertical});
+
+  .c-icon {
+    width: $line-height-tight-em;
+    height: $line-height-tight-em;
   }
 
 }
