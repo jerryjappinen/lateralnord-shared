@@ -101,10 +101,9 @@ export default {
 
 <style lang="scss">
 
-$c-logo-color: $very-dark;
+$c-logo-color: $dark;
 $c-logo-negative: $white;
-$c-logo-highlight: $green;
-// $c-logo-highlight: $red;
+$c-logo-highlight: $red;
 
 .c-logo {
   @include block;
