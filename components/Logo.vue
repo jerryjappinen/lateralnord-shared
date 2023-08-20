@@ -101,9 +101,10 @@ export default {
 
 <style lang="scss">
 
-$c-logo-color: #161513;
-$c-logo-negative: #fff;
-$c-logo-green: #62d198;
+$c-logo-color: $very-dark;
+$c-logo-negative: $white;
+$c-logo-highlight: $green;
+// $c-logo-highlight: $red;
 
 .c-logo {
   @include block;
@@ -125,8 +126,8 @@ $c-logo-green: #62d198;
 .c-logo-highlight {
 
   circle {
-    color: $c-logo-green;
-    fill: $c-logo-green;
+    color: $c-logo-highlight;
+    fill: $c-logo-highlight;
   }
 
 }
