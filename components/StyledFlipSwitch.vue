@@ -6,7 +6,7 @@ export default {
   name: 'FlipSwitch',
 
   components: {
-    Textfield
+    FlipSwitch
   },
 
   mixins: [ownValue],
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <textfield
+  <flip-switch
     ref="flip-switch"
     class="c-styled-flip-switch"
     :value.sync="ownValue"
