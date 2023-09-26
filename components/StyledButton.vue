@@ -110,11 +110,11 @@ export default {
   justify-content: center;
 
   .c-click-button-icon-left {
-    left: #{$pad-loose-horizontal / 2};
+    left: #{math.div($pad-loose-horizontal, 2)};
   }
 
   .c-click-button-icon-right {
-    right: #{$pad-loose-horizontal / 2};
+    right: #{math.div($pad-loose-horizontal, 2)};
   }
 
 }
