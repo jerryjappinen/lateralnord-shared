@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 $colors: (
+  $brand-color,
   $white,
   $very-very-light-grey,
   $very-light-grey,

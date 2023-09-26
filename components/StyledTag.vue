@@ -55,6 +55,11 @@ export default {
   background-color: $very-dark;
 }
 
+.c-styled-tag-brand {
+  color: $white;
+  background-color: $brand-color;
+}
+
 
 
 // Colors

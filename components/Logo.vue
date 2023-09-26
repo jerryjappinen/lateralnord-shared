@@ -103,7 +103,7 @@ export default {
 
 $c-logo-color: $dark;
 $c-logo-negative: $white;
-$c-logo-highlight: $red;
+$c-logo-highlight: $brand-color;
 
 .c-logo {
   @include block;
