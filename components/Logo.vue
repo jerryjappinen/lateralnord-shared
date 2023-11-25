@@ -123,24 +123,24 @@ export default {
       <path
         class="c-logo-shape c-logo-shape-1"
         :d="twoLines
-          ? 'M238 109.6H318V118.6H238V109.6Z '
-          : 'M583 19.6H663V28.6H583V19.6Z'
+          ? 'M238 109.6H278V120.6H238V109.6Z'
+          : 'M583 19.6H623V30.6H583V19.6Z'
         "
       />
 
       <path
         class="c-logo-shape c-logo-shape-2"
         :d="twoLines
-          ? 'M238 128.6H318V137.6H238V128.6Z'
-          : 'M583 38.6H663V47.6H583V38.6Z'
+          ? 'M238 127.6H318V138.6H238V127.6Z'
+          : 'M583 37.6H663V48.6H583V37.6Z'
         "
       />
 
       <path
         class="c-logo-shape c-logo-shape-3"
         :d="twoLines
-          ? 'M238 147.6H318V156.6H238V147.6Z'
-          : 'M583 57.6H663V66.6H583V57.6Z'
+          ? 'M278 145.6H318V156.6H278V145.6Z'
+          : 'M623 55.6H663V66.6H623V55.6Z'
         "
       />
 
