@@ -136,7 +136,8 @@ export default {
 
 .c-styled-button-primary,
 .c-styled-button-danger,
-.c-styled-button-secondary-white {
+.c-styled-button-secondary-white,
+.c-styled-button-highlight {
   color: $white;
 
   &.c-click-button-not-loading {
