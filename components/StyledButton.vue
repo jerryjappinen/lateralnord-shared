@@ -147,7 +147,7 @@ export default {
 }
 
 .c-styled-button-highlight {
-  background-color: $yellow;
+  background-color: $brand-color;
 }
 
 .c-styled-button-primary {

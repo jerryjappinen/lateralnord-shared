@@ -2,6 +2,7 @@
 import Tag from 'linna/components/tag'
 
 const colors = [
+  'highlight',
   'white',
   'grey',
   'dark',
@@ -55,7 +56,7 @@ export default {
   background-color: $very-dark;
 }
 
-.c-styled-tag-brand {
+.c-styled-tag-highlight {
   color: $white;
   background-color: $brand-color;
 }
