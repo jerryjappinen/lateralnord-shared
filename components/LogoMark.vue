@@ -5,14 +5,17 @@ export default {
   props: {
 
     negative: {
+      type: Boolean,
       default: false
     },
 
     color: {
+      type: Boolean,
       default: false
     },
 
     highlight: {
+      type: Boolean,
       default: false
     }
 
@@ -20,11 +23,8 @@ export default {
 
   data () {
     return {
-      circleRadius: 12,
       width: 100,
-      height: 100,
-      circleX: 88,
-      circleY: 82
+      height: 100
     }
   },
 
@@ -57,16 +57,27 @@ export default {
       fill-rule="evenodd"
     >
       <path
-        d="M0 60.244C0 39.48 12.284 26.952 27.813 26.952c8.576 0 15.297 3.828 18.89 9.744V7h22.83v85.84h-22.83v-9.048c-3.36 5.8-9.85 9.86-19.006 9.86C12.284 93.652 0 81.008 0 60.244zm46.819 0c0-8.7-5.447-13.456-11.82-13.456-6.49 0-11.821 4.64-11.821 13.456 0 8.7 5.33 13.572 11.82 13.572 6.374 0 11.82-4.756 11.82-13.572z"
+        d="M27.8131 23.952C12.2841 23.952 0 36.48 0 57.244C0 78.008 12.2841 90.652 27.6972 90.652C36.8523 90.652 43.3421 86.592 46.7028 80.792V89.84H69.5327V4H46.7028V33.696C43.1103 27.78 36.3888 23.952 27.8131 23.952ZM34.9981 43.788C41.372 43.788 46.8187 48.544 46.8187 57.244C46.8187 66.06 41.372 70.816 34.9981 70.816C28.5084 70.816 23.1776 65.944 23.1776 57.244C23.1776 48.428 28.5084 43.788 34.9981 43.788Z"
         fill="currentColor"
         fill-rule="nonzero"
       />
 
-      <circle
+      <path
         fill="currentColor"
-        cx="88"
-        cy="82"
-        r="12"
+        class="c-logo-mark-shape c-logo-mark-shape-1"
+        d="M77 48.84H100V57.84H77V48.84Z"
+      />
+
+      <path
+        fill="currentColor"
+        class="c-logo-mark-shape c-logo-mark-shape-2"
+        d="M77 64.84H100V73.84H77V64.84Z"
+      />
+
+      <path
+        fill="currentColor"
+        class="c-logo-mark-shape c-logo-mark-shape-3"
+        d="M77 80.84H100V89.84H77V80.84Z"
       />
 
     </g>
@@ -75,9 +86,9 @@ export default {
 
 <style lang="scss">
 
-$c-logo-mark-color: #161513;
-$c-logo-mark-negative: #fff;
-$c-logo-mark-green: #62d198;
+$c-logo-mark-color: $dark;
+$c-logo-mark-negative: $white;
+$c-logo-mark-green: $brand-color;
 
 .c-logo-mark {
   @include block;
@@ -98,7 +109,7 @@ $c-logo-mark-green: #62d198;
 .c-logo-mark-negative,
 .c-logo-mark-highlight {
 
-  circle {
+  .c-logo-mark-shape {
     fill: $c-logo-mark-green;
   }
 

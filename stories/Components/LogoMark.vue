@@ -23,7 +23,7 @@ export default {
 
       <tr>
         <td><code>highlight</code></td>
-        <td>Set the circle to be colored green.</td>
+        <td>Set the mark to be colored green.</td>
         <td><code>false</code></td>
       </tr>
 

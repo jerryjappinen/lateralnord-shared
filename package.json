@@ -1,6 +1,6 @@
 {
   "name": "lateralnord-shared",
-  "version": "4.6.14",
+  "version": "4.7.0",
   "description": "",
   "main": "index.js",
   "files": [
@@ -55,7 +55,7 @@
     "fast-safe-stringify": "^2.0.7",
     "highlight.js": "^10.2.1",
     "jest": "^26.5.2",
-    "lateralnord-svg": "^1.1.9",
+    "lateralnord-svg": "^1.1.16",
     "linna": "^6.4.2",
     "linna-util": "^5.0.17",
     "lodash": "^4.17.21",
