@@ -136,12 +136,12 @@ export default {
   }
 
   .c-textfield-icon {
-    left: $pad-tight-horizontal;
+    left: calc($pad-tight-horizontal + 0.25em);
   }
 
   &.c-textfield-has-icon {
     .c-textfield-input {
-      padding-left: calc(#{$pad-tight-horizontal * 2} + 1em);
+      padding-left: calc($pad-horizontal + 0.25em + 0.25em + 1em);
     }
   }
 
