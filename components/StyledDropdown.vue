@@ -12,6 +12,11 @@ export default {
   mixins: [ownValue],
 
   props: {
+    negative: {
+      type: Boolean,
+      default: false
+    },
+
     options: {},
     value: {},
     disabled: {},
@@ -24,6 +29,16 @@ export default {
 <template>
   <dropdown
     class="c-styled-dropdown"
+    :class="{
+      'c-styled-dropdown-default': !negative,
+      'c-styled-dropdown-negative': negative,
+      'c-styled-dropdown-enabled': !disabled,
+      'c-styled-dropdown-disabled': disabled,
+      'c-styled-dropdown-default-enabled': !negative && !disabled,
+      'c-styled-dropdown-default-disabled': !negative && disabled,
+      'c-styled-dropdown-negative-enabled': negative && !disabled,
+      'c-styled-dropdown-negative-disabled': negative && disabled
+    }"
     :options="options"
     :value.sync="ownValue"
     :disabled="disabled"
@@ -37,11 +52,11 @@ export default {
 
   .c-dropdown-select {
     @include border-box;
-    @include radius-tight;
+    @include radius;
     @include pad-vertical;
     @include pad-left;
     padding-right: calc(#{2 * $pad-tight-horizontal} + 1em);
-    box-shadow: inset 0 0 0 1px $default-border-color;
+    box-shadow: inset 0 0 0 0 transparent;
 
     &:hover {
       box-shadow: inset 0 0 0 1px currentColor;
@@ -61,6 +76,18 @@ export default {
     right: $pad-tight-horizontal;
   }
 
+}
+
+.c-styled-dropdown-default-enabled {
+  .c-dropdown-select {
+    background-color: translucent($dark, 0.1);
+  }
+}
+
+.c-styled-dropdown-negative-enabled {
+  .c-dropdown-select {
+    background-color: translucent($white, 0.1);
+  }
 }
 
 </style>

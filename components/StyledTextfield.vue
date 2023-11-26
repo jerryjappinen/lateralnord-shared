@@ -12,6 +12,11 @@ export default {
   mixins: [ownValue],
 
   props: {
+    negative: {
+      type: Boolean,
+      default: false
+    },
+
     labelId: {},
     icon: {},
     type: {},
@@ -62,6 +67,16 @@ export default {
   <textfield
     ref="textfield"
     class="c-styled-textfield"
+    :class="{
+      'c-styled-textfield-default': !negative,
+      'c-styled-textfield-negative': negative,
+      'c-styled-textfield-enabled': !disabled,
+      'c-styled-textfield-disabled': disabled,
+      'c-styled-textfield-default-enabled': !negative && !disabled,
+      'c-styled-textfield-default-disabled': !negative && disabled,
+      'c-styled-textfield-negative-enabled': negative && !disabled,
+      'c-styled-textfield-negative-disabled': negative && disabled
+    }"
     :label-id="labelId"
     :icon="icon"
     :type="type"
@@ -94,10 +109,15 @@ export default {
     }
   }
 
+  .c-textfield-button {
+    color: inherit;
+    background: transparent;
+  }
+
   .c-textfield-input {
-    @include radius-tight;
+    @include radius;
     @include pad;
-    box-shadow: inset 0 0 0 1px $default-border-color;
+    box-shadow: inset 0 0 0 0 transparent;
 
     &:hover {
       box-shadow: inset 0 0 0 1px currentColor;
@@ -127,12 +147,22 @@ export default {
 
 }
 
-.c-styled-textfield-disabled {
-
+.c-styled-textfield-default-enabled {
   .c-textfield-input {
-    background-color: translucent($very-dark, 0.06);
+    background-color: translucent($dark, 0.1);
   }
-
 }
+
+.c-styled-textfield-negative-enabled {
+  .c-textfield-input {
+    background-color: translucent($white, 0.1);
+  }
+}
+
+// .c-styled-textfield-disabled {
+//   .c-textfield-input {
+//     background-color: translucent($very-dark, 0.06);
+//   }
+// }
 
 </style>
