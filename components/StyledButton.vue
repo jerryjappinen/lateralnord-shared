@@ -113,9 +113,7 @@ export default {
 .c-styled-button-secondary-white,
 .c-styled-button-tertiary {
   .c-click-button-content {
-    // @include label;
     @include strong;
-    // height: 1.5rem;
   }
 }
 
@@ -150,6 +148,14 @@ export default {
   &.c-click-button-not-loading {
     &.c-click-button-disabled {
       color: translucent($very-dark, 0.3);
+    }
+  }
+}
+
+.c-styled-button-secondary {
+  &.c-click-button-not-loading {
+    &.c-click-button-disabled {
+      color: translucent($dark, 0.5);
     }
   }
 }
@@ -337,7 +343,7 @@ export default {
   }
 }
 
-.c-click-button-default {
+.c-styled-button-default {
   &.c-click-button-not-loading {
     &.c-click-button-disabled {
       @include discreet;

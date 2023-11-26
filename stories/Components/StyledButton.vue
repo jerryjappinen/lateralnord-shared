@@ -164,6 +164,15 @@ export default {
       </styled-button>
 
       <styled-button
+        color="secondary"
+        :disabled="true"
+        icon-left="email"
+        @click="onClick"
+      >
+        Secondary disabled
+      </styled-button>
+
+      <styled-button
         color="tertiary"
         icon-left="email"
         @click="onClick"
