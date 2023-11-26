@@ -124,7 +124,7 @@ export default {
 .c-styled-button-secondary,
 .c-styled-button-secondary-white {
   @include pad;
-  @include radius-tight;
+  @include radius;
   justify-content: center;
 
   .c-click-button-icon-left {
