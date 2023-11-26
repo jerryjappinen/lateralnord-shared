@@ -256,14 +256,6 @@ export default {
 .c-styled-button-link-negative {
   @include link;
   color: $light-blue;
-
-  &.c-click-button-enabled {
-    &:focus,
-    &:hover {
-      color: $blue;
-    }
-  }
-
 }
 
 
