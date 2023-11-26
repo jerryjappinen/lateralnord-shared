@@ -15,6 +15,12 @@ const colors = [
   'link'
 ]
 
+const negativePairings = {
+  primary: 'white',
+  secondary: 'secondary-white',
+  outline: 'outline-white'
+}
+
 export default {
   name: 'StyledButton',
 
@@ -30,6 +36,12 @@ export default {
       validator (value) {
         return colors.indexOf(value) > -1
       }
+    },
+
+    // Flips colors
+    negative: {
+      type: Boolean,
+      default: false
     },
 
     href: {},
@@ -48,6 +60,19 @@ export default {
     disabled: {}
   },
 
+  computed: {
+
+    // Pairings
+    computedColor () {
+      if (this.negative && negativePairings[this.color]) {
+        return negativePairings[this.color]
+      }
+
+      return this.color
+    }
+
+  },
+
   methods: {
 
     onClick (event) {
@@ -62,7 +87,7 @@ export default {
 <template>
   <click-button
     class="c-styled-button"
-    :class="'c-styled-button-' + (color || 'default')"
+    :class="'c-styled-button-' + (computedColor || 'default')"
     :href="href"
     :to="to"
     :mailto="mailto"
