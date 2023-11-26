@@ -12,13 +12,15 @@ const colors = [
   'outline-white',
   'tertiary',
   'plain',
-  'link'
+  'link',
+  'link-negative'
 ]
 
 const negativePairings = {
   primary: 'white',
   secondary: 'secondary-white',
-  outline: 'outline-white'
+  outline: 'outline-white',
+  link: 'link-negative'
 }
 
 export default {
@@ -249,9 +251,16 @@ export default {
     }
   }
 
-  &.c-click-button-not-loading {
-    &.c-click-button-disabled {
-      @include discreet;
+}
+
+.c-styled-button-link-negative {
+  @include link;
+  color: $light-blue;
+
+  &.c-click-button-enabled {
+    &:focus,
+    &:hover {
+      color: $blue;
     }
   }
 
@@ -313,7 +322,8 @@ export default {
 
 .c-styled-button-tertiary,
 .c-styled-button-plain,
-.c-styled-button-link {
+.c-styled-button-link,
+.c-styled-button-link-negative {
   text-decoration-line: underline;
   text-decoration-color: transparent;
 
@@ -335,7 +345,8 @@ export default {
   }
 }
 
-.c-styled-button-link {
+.c-styled-button-link,
+.c-styled-button-link-negative {
   &.c-click-button-not-loading {
     &.c-click-button-disabled {
       @include discreet;
