@@ -62,13 +62,8 @@ export default {
 
   computed: {
 
-    // Pairings
     computedColor () {
-      if (this.negative && negativePairings[this.color]) {
-        return negativePairings[this.color]
-      }
-
-      return this.color
+      return this.negative && negativePairings[this.color] ? negativePairings[this.color] : this.color
     }
 
   },

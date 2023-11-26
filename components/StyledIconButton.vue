@@ -1,6 +1,12 @@
 <script>
 import StyledButton from './StyledButton'
 
+const negativePairings = {
+  primary: 'white',
+  secondary: 'secondary-white',
+  outline: 'outline-white'
+}
+
 export default {
   name: 'StyledIconButton',
 
@@ -15,6 +21,7 @@ export default {
     },
 
     color: {},
+    negative: {},
     href: {},
     to: {},
     mailto: {},
@@ -26,6 +33,14 @@ export default {
     icon: {},
     loading: {},
     disabled: {}
+  },
+
+  computed: {
+
+    computedColor () {
+      return this.negative && negativePairings[this.color] ? negativePairings[this.color] : this.color
+    }
+
   },
 
   methods: {
@@ -43,11 +58,12 @@ export default {
   <styled-button
     class="c-styled-icon-button"
     :class="{
-      ['c-styled-icon-button-' + (color || 'default')]: true,
+      ['c-styled-icon-button-' + (computedColor || 'default')]: true,
       'c-styled-icon-button-small': !large,
       'c-styled-icon-button-large': large
     }"
     :color="color"
+    :negative="negative"
     :href="href"
     :to="to"
     :mailto="mailto"
