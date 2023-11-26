@@ -45,16 +45,16 @@ export default {
 
   .c-logo-shape {
     animation-name: c-animated-logo-pulse;
-    animation-duration: 10s;
+    animation-duration: 8000ms;
     animation-iteration-count: infinite;
   }
 
   .c-logo-shape-2 {
-    animation-delay: 0.25s;
+    animation-delay: 200ms;
   }
 
   .c-logo-shape-3 {
-    animation-delay: 0.5s;
+    animation-delay: 600ms;
   }
 
 }
@@ -66,7 +66,7 @@ export default {
   }
 
   5% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   30% {
