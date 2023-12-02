@@ -4,7 +4,13 @@ import StyledButton from './StyledButton'
 const negativePairings = {
   primary: 'white',
   secondary: 'secondary-white',
-  outline: 'outline-white'
+  outline: 'outline-white',
+  link: 'link-negative',
+
+  white: 'primary',
+  'secondary-white': 'secondary',
+  'outline-white': 'outline',
+  'link-negative': 'link'
 }
 
 export default {
