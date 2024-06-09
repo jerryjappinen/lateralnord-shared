@@ -4,11 +4,13 @@ import StyledButton from './StyledButton'
 const negativePairings = {
   primary: 'white',
   secondary: 'secondary-white',
+  tertiary: 'tertiary-white',
   outline: 'outline-white',
   link: 'link-negative',
 
   white: 'primary',
   'secondary-white': 'secondary',
+  'tertiary-white': 'tertiary',
   'outline-white': 'outline',
   'link-negative': 'link'
 }
@@ -106,6 +108,18 @@ export default {
       &:focus,
       &:hover {
         @include hover-shadow-tight($very-dark, 0.25);
+      }
+    }
+
+  }
+
+  &.c-styled-button-tertiary-white {
+    @include hover-shadow-tight-rest($white);
+
+    &.c-click-button-enabled {
+      &:focus,
+      &:hover {
+        @include hover-shadow-tight($white, 0.25);
       }
     }
 
