@@ -11,6 +11,7 @@ const colors = [
   'outline',
   'outline-white',
   'tertiary',
+  'tertiary-white',
   'plain',
   'link',
   'link-negative'
@@ -19,11 +20,13 @@ const colors = [
 const negativePairings = {
   primary: 'white',
   secondary: 'secondary-white',
+  tertiary: 'tertiary-white',
   outline: 'outline-white',
   link: 'link-negative',
 
   white: 'primary',
   'secondary-white': 'secondary',
+  'tertiary-white': 'tertiary',
   'outline-white': 'outline',
   'link-negative': 'link'
 }
@@ -118,7 +121,8 @@ export default {
 .c-styled-button-danger,
 .c-styled-button-secondary,
 .c-styled-button-secondary-white,
-.c-styled-button-tertiary {
+.c-styled-button-tertiary,
+.c-styled-button-tertiary-white {
   .c-click-button-content {
     @include strong;
   }
@@ -318,6 +322,7 @@ export default {
 }
 
 .c-styled-button-tertiary,
+.c-styled-button-tertiary-white,
 .c-styled-button-plain,
 .c-styled-button-link,
 .c-styled-button-link-negative {
@@ -334,6 +339,7 @@ export default {
 }
 
 .c-styled-button-tertiary,
+.c-styled-button-tertiary-white,
 .c-styled-button-plain {
   &.c-click-button-not-loading {
     &.c-click-button-disabled {
