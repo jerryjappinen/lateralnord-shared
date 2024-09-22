@@ -1,5 +1,5 @@
 <script>
-import Tag from 'linna/components/tag'
+import Tag from 'linna/components/Tag'
 
 const colors = [
   'highlight',
