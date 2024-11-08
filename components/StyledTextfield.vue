@@ -33,7 +33,8 @@ export default {
     pattern: {},
     hex: {},
     inline: {},
-    disabled: {}
+    disabled: {},
+    ariaLabel: {}
   },
 
   methods: {
@@ -94,6 +95,7 @@ export default {
     :hex="hex"
     :inline="inline"
     :disabled="disabled"
+    :aria-label="ariaLabel"
     @focus="onFocus"
     @blur="onBlur"
   />
