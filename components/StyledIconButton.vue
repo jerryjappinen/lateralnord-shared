@@ -40,7 +40,8 @@ export default {
     tab: {},
     icon: {},
     loading: {},
-    disabled: {}
+    disabled: {},
+    title: {}
   },
 
   computed: {
@@ -83,6 +84,7 @@ export default {
     :icon-left="icon"
     :loading="loading"
     :disabled="disabled"
+    :title="title"
     @click="onClick"
   />
 </template>
