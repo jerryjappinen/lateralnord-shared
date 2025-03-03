@@ -105,7 +105,7 @@ export default {
     @include hover-shadow-tight-rest($very-dark);
   }
 
-  &:focus,
+  &:focus-visible,
   &:hover {
     .c-checkbox-enabled {
       @include transition-fast;

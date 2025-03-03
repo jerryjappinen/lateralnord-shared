@@ -49,7 +49,8 @@ export default {
     :mailto="mailto"
     :tel="tel"
     :external="external"
-    :noIndex="noIndex"
+    :no-index="noIndex"
+    ref="button"
     :submit="submit"
     :tab="tab"
     :block="block"
@@ -64,7 +65,6 @@ export default {
       'c-link-tab-selected': selected
     }"
     class="c-link-tab"
-    ref="button"
     v-on="$listeners"
   >
     <slot />
@@ -105,7 +105,7 @@ export default {
   &.c-styled-button-plain,
   &.c-styled-button-link {
     &.c-click-button-enabled {
-      &:focus,
+      &:focus-visible,
       &:hover {
         text-decoration-color: transparent;
       }

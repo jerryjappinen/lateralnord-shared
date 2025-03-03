@@ -107,7 +107,7 @@ export default {
     @include hover-shadow-tight-rest($very-dark);
 
     &.c-click-button-enabled {
-      &:focus,
+      &:focus-visible,
       &:hover {
         @include hover-shadow-tight($very-dark, 0.25);
       }
@@ -119,7 +119,7 @@ export default {
     @include hover-shadow-tight-rest($white);
 
     &.c-click-button-enabled {
-      &:focus,
+      &:focus-visible,
       &:hover {
         @include hover-shadow-tight($white, 0.25);
       }
